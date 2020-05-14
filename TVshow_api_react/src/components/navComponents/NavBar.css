@@ -1,0 +1,18 @@
+.navContainer {
+  background: #000001;
+  height: 4em;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  /* color: #bf0000; */
+}
+
+.navElements {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+  padding-top: 8px;
+  /* color: #bf0000; */
+}

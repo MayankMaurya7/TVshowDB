@@ -1,0 +1,14 @@
+#cast {
+  list-style: none;
+  width: 70%;
+}
+
+#image_cast {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+.li_cast {
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
