@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Cast.css";
 
 function Cast(props) {
   const [showcast, setCast] = useState(undefined);
+  useEffect(() => {
+    setCast(false);
+  }, [props.showID]);
 
   const HandleCastButton = () => {
     fetch(`http://api.tvmaze.com/shows/${props.showID}?embed=cast`)
@@ -10,7 +13,8 @@ function Cast(props) {
       .then((res) => {
         setCast(res);
         // console.log(res);
-      });
+      })
+      .catch((error) => console.log(error));
   };
 
   console.log(showcast);
@@ -34,7 +38,7 @@ function Cast(props) {
                     }
                     alt="Image Not found"
                   />
-                }{" "}
+                }
               </li>
             </ul>
           ))}
