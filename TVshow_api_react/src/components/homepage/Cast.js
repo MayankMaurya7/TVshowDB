@@ -24,8 +24,8 @@ function Cast(props) {
       <button onClick={HandleCastButton}> Show Cast </button>
       {showcast && (
         <div>
-          {showcast._embedded.cast.map((e) => (
-            <ul id="cast">
+          <ul id="cast">
+            {showcast._embedded.cast.map((e) => (
               <li className="li_cast">
                 <p>{e.person.name}</p>{" "}
                 {
@@ -40,8 +40,8 @@ function Cast(props) {
                   />
                 }
               </li>
-            </ul>
-          ))}
+            ))}
+          </ul>
           {/* <img
             src={
               showcast._embedded.cast.person.image.medium
