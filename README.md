@@ -1,2 +1,2 @@
-# portfolio
-Contains UI projects that I have worked on
+# TVshowDB
+Contains a React project where you can search TV shows and their details
